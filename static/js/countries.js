@@ -19,17 +19,19 @@ function retrieveDataForSchool(countryName) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("countryForm").addEventListener("submit", function (event) {
+  console.log("DOMContentLoaded")
+  document.getElementById("countryForm").addEventListener("submit", async function (event) {
     event.preventDefault();
-
+    console.log("formSubmitted")
     var countryName = document.getElementById("countryName").value;
     var countryList = document.getElementById("countryList");
 
-    var country = findCountry(countryName);
-
+    var country = await listCountry(countryName);
+    country = country[0]
+    console.log(country)
     if (country) {
         var listItem = document.createElement("li");
-        listItem.innerHTML = "<h2>" + country.name + "</h2>" +
+        listItem.innerHTML = "<h2>" + country.name.official + "</h2>" +
             "<p>Capital: " + country.capital + "</p>" +
             "<p>Population: " + country.population + "</p>" +
             "<p>Area: " + country.area + "</p>";
