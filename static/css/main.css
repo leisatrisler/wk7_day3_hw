@@ -1,0 +1,46 @@
+
+.footer-bg-color{
+    background-color:#10027a;
+}
+
+.footer-title-color{
+    color:rgb(14, 1, 112);
+}
+
+.footer-floor{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(6, 0, 0);
+    text-align: center;
+}
+
+.button-1{
+    background-color: #10027a;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 2px;
+    cursor: pointer;
+}
+
+.button-4{
+    background-color: #10027a;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 2px;
+    cursor: pointer;
+}
+
+
+
